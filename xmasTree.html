@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>Xmas Tree</title>
+    <style>
+        .rectangle {
+            position: absolute;
+            width: 10px;
+            height: 20px;
+            background-color: brown;
+            transform: translate(65px, 200px);
+        }
+        #message {
+            position: absolute;
+            text-align: justify;
+            color: red; /* Optional styling */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            transform: translate(30px, 70px);
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangle"></div>
+    <div>
+        <input type = "range" id = "triangle-slider" min = "0" max = "11" value = "3">
+        <p>聖誕樹: <span id="triangle-count">3</span></p>
+    </div>
+    <div id = "triangle-container"></div>
+    <div id="message"></div>
+    <script src = "xmasTree.js"></script>
+</body>
+</html>
